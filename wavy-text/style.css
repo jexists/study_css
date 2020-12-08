@@ -1,0 +1,36 @@
+@charset "UFT-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 1);
+}
+body {
+  height: 100vh;
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wave {
+  font-size: 5rem;
+  text-transform: uppercase;
+  /* -webkit-box-reflect: below; */
+  -webkit-box-reflect: below -50px linear-gradient(transparent, rgba(0,0,0,0.2));
+}
+
+.wave span {
+  /* color: #000; */
+  display: inline-block;
+  /* transform => block이여야 사용가능 */
+  animation: wave 1s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes wave {
+  0% { transform: translateY(0px);}
+  20% { transform: translateY(-20px);}
+  40%, 100% { transform: translateY(0px);}
+}
