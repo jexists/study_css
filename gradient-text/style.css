@@ -15,7 +15,7 @@ body {
   flex-direction: column;
 }
 
-p {
+.gradient {
   font-size: 6rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -26,4 +26,37 @@ p {
   -webkit-background-clip: text;
   text-shadow: 0 0 2px rgba(0,0,0,0.5);
   /* text-shadow: 0 0 10px rgba(255,255,255,1); */
+}
+.gradient_animate {
+
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  -webkit-text-stroke: 2px #fff;
+  position: relative;
+}
+
+.gradient_animate::before {
+  content: attr(data-text);
+  position: absolute;
+  background: linear-gradient(90deg, #d630f2, #ff002f, #e4ff00, #03a9f4, #d630f2);
+  background-size: 300%;
+  overflow: hidden;
+  transition: width 2s;
+  animation: animate 5s linear infinite;
+  width: 0;
+  /* width: 100%; */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient_animate:hover::before {
+  width: 100%;
+}
+
+@keyframes animate {
+  0% {background-position: 0 0;}
+  100% {background-position: 300% 0;}
 }
