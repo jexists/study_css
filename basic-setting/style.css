@@ -1,10 +1,10 @@
 @charset "UFT-8";
 
 * {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1); */
 }
 body {
   height: 100vh;
