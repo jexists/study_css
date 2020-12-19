@@ -15,30 +15,11 @@ body {
   flex-direction: column;
 }
 
-:root {
-  --l: 0;
-  --deg: 0;
-  --result: 0;
-}
-
 .loading {
   text-align: center;
   transform: rotate(-90deg);
 }
 .loading_circle {
-  stroke-dasharray: var(--l);
-  stroke-dashoffset: var(--l);
-  /* animation: loading 3s infinite; */
   filter: drop-shadow(0 0 10px #fff);
   box-shadow: 0 0 10px #fff;
 }
-
-/* @keyframes loading {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-      stroke-dashoffset: var(--result);
-  }
-} */
