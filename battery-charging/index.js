@@ -11,6 +11,8 @@ const r = parseInt(donut.getAttribute('r'));
 // document.documentElement.style.setProperty('--result', 2 * 3.141592 * r * (degree / 360));
 
 console.log( r * 3.141592 * 2); //157.0796
+const data = parseInt(r * 3.141592 * 2);
+
 donut.style.strokeDasharray = r * 3.141592 * 2;
 donut.style.strokeDashoffset = r * 3.141592 * 2;
 // donut.style.strokeDashoffset = -140;
@@ -18,9 +20,7 @@ donut.style.strokeDashoffset = r * 3.141592 * 2;
 let i = 0
 const loading = setInterval(() => {
 
-    if (i <= -157) {
-        i = -157;
-    } else { i--; }
+    i <= -data ? i = -data : i--;
 
     donut.style.strokeDashoffset = (r * 3.141592 * 2) - i;
     
