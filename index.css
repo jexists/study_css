@@ -1,0 +1,257 @@
+@charset "UFT-8";
+/* reset.css */
+
+/* 1. body, html */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: #333;
+  font-family: "noto sans", "Gothic Al", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+p,
+pre,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid #777;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f07;
+}
+a:focus {
+  outline: 2px solid #f06;
+}
+
+abbr {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #777;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #f06;
+}
+button:hover {
+  background-color: #fa0;
+}
+button:focus {
+  outline: 2px solid #f06;
+}
+
+/* html5 =============================== */
+header,
+footer,
+aside,
+nav,
+section,
+article,
+figure,
+figcaption {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+/* form ================================ */
+form,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+legend {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+input {
+  box-sizing: border-box;
+  text-indent: 0.5rem;
+  cursor: pointer;
+}
+
+button {
+  border: 0;
+  background-color: #777;
+  color: #fff;
+  cursor: pointer;
+}
+select,
+text-area {
+  box-sizing: border-box;
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover,
+input[type="url"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+text-area:hover,
+select:hover {
+  background-color: #fdc;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+text-area:focus,
+select:focus {
+  background-color: #fcd;
+}
+
+/* common.css =========================== */
+
+.hidden_wrap a > span,
+.hidden {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.clearfix::after {
+  content: " ";
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+.float_array {
+  width: 100%;
+  height: 100%;
+}
+.float_array > li {
+  float: left;
+  height: 100%;
+}
+.float_array > li:last-child {
+  margin-right: 0;
+}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+}
+
+#headBox {
+  height: 15vh;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  font-size: 16px;
+}
+#contentBox {
+  min-height: 75vh;
+}
+#footBox {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd;
+}
+#footBox h2 {
+  text-align: center;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 30px;
+  text-align: center;
+
+}
+.contents li {
+  width: 200px;
+  height: 30px;
+  border: 1px solid #9b9b9b;
+  border-radius: 7px;
+  margin: 0 0 10px 10px;
+  overflow: hidden;
+}
+.contents li a {
+  display: block;
+  width: 100%;
+  min-width: 150px;
+  line-height: 32px;
+  height: 100%;
+}
+.contents li a:hover {
+  background-color: #2f33af;
+  color: #fff;
+}
