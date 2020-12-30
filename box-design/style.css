@@ -24,7 +24,9 @@ body {
   align-items: center;
 }
 
-.square span:nth-child(1) {
+.square::before {
+  content: "";
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,12 +38,14 @@ body {
   animation: animate 6s linear infinite;
 }
 
-.square:hover span:nth-child(1) {
+.square:hover::before {
   border: none;
   background: rgba(0, 0, 255, 0.8);
 }
 
-.square span:nth-child(2) {
+.square::after {
+  content: "";
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -53,12 +57,12 @@ body {
   animation: animate 4s linear infinite;
 }
 
-.square:hover span:nth-child(2) {
+.square:hover::after {
   border: none;
   background: rgba(0, 0, 255, 0.8);
 }
 
-.square span:nth-child(3) {
+.square span {
   position: absolute;
   top: 0;
   left: 0;
@@ -70,7 +74,7 @@ body {
   animation: animate2 10s linear infinite;
 }
 
-.square:hover span:nth-child(3) {
+.square:hover span {
   border: none;
   background: rgba(0, 0, 255, 0.8);
 }
