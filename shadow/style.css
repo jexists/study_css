@@ -18,7 +18,7 @@ body {
 }
 
 .box {
-  width: 100vw;
+  width: 100%;
   min-height: 50vh;
 
   display: flex;
