@@ -1,0 +1,12 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  position: relative;
+  background: linear-gradient(120deg, #fff, #fff 60%, #3b5998 60%, #3b5998 100%);
+  min-height: 100vh;
+}
