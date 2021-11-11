@@ -72,7 +72,7 @@ header ul li a.active {
 }
 
 .contentBx .text {
-  min-width: 800px;
+  max-width: 800px;
 }
 
 .contentBx .text h2 {
@@ -189,11 +189,13 @@ header ul li a.active {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    margin-bottom: 10px;
   }
   .dots .dot {
     width: 25px;
     height: 10px;
     background: #3b5998;
+    opacity: 0.2;
   }
   .dots .dot.active {
     background: #2d88ff;
