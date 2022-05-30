@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2022 구글 I/O 개발자 컨퍼런스</title>
+
+  <style>
+    :root {
+      --brandColor: blue;
+      accent-color: red
+    }
+
+    .blending {
+      /* color-mix: 색상 혼합 */
+      /* 50% 50% */
+      background-color: color-mix(red, blue);
+      /* 혼합 비율 지정 가능 */
+      background-color: color-mix(red 30%, blue 70%);
+      background-color: color-mix(var(--brandColor) 50%, white 10%);
+    }
+
+    .contrast {
+      /* 배경색 텍스트색 색상 대비: default: 검정/흰색 */
+      /* color: color-contrast(배경색) -> 브라우저에서 검정/흰색 선택 */
+      background-color: red;
+      color: color-contrast(red);
+      /* color: color-constrast(배경색 vs 브라우저 선택할 색상) */
+      color: color-contrast(blue vs pink, yellow, green);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="blending">
+    color-mix: 색상 혼합 (혼합 비율 지정 가능)
+  </div>
+
+  <div class="accent">
+    <p>
+      checkbox, radio button, range slider, progress 색상 변경
+    </p>
+    <input type="checkbox" checked />
+    <input type="radio" checked />
+    <input type="range" />
+    <progress max="100" value="50">50%</progress>
+  </div>
+
+  <div class="contrast">
+    색상 대비
+    <div class="box">색상 대비</div>
+  </div>
+
+  <form inert>
+    <label>비활성화: 페이지 고정</label>
+    <input type="text" />
+    <button>save</button>
+  </form>
+</body>
+
+</html>
